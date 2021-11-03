@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<theme name="MyMandriva" version="1820">
+<theme name="MyMandriva" version="1829">
 	<properties>
-		<templateset><![CDATA[21]]></templateset>
+		<templateset><![CDATA[18]]></templateset>
 		<editortheme><![CDATA[mybb.css]]></editortheme>
 		<imgdir><![CDATA[themes/mymandriva]]></imgdir>
 		<logo><![CDATA[themes/mymandriva/logo.png]]></logo>
@@ -11,7 +11,7 @@
 		<disporder><![CDATA[a:7:{s:10:"global.css";i:1;s:8:"css3.css";i:2;s:10:"usercp.css";i:3;s:9:"modcp.css";i:4;s:14:"showthread.css";i:5;s:17:"thread_status.css";i:6;s:16:"star_ratings.css";i:7;}]]></disporder>
 	</properties>
 	<stylesheets>
-		<stylesheet name="thread_status.css" attachedto="forumdisplay.php|usercp.php|search.php" version="1820"><![CDATA[/*
+		<stylesheet name="thread_status.css" attachedto="forumdisplay.php|usercp.php|search.php" version="1829"><![CDATA[/*
  * MyBB: MyMandriva Frontend Theme 
  *
  * File: thread_status.css File
@@ -98,9 +98,10 @@
 .thread_status.newclosefolder {
     background-image: url('themes/mymandriva/newlockfolder.png'); 
 }
-  ]]>
+  
+		]]>
 		</stylesheet>
-		<stylesheet name="star_ratings.css" attachedto="forumdisplay.php|showthread.php" version="1820"><![CDATA[/*
+		<stylesheet name="star_ratings.css" attachedto="forumdisplay.php|showthread.php" version="1829"><![CDATA[/*
  * MyBB: MyMandriva Frontend Theme 
  *
  * File: star_rating.css File
@@ -202,9 +203,10 @@ td .star_rating {
 }
 	
 		
+		
 		]]>
 		</stylesheet>
-		<stylesheet name="usercp.css" attachedto="usercp.php|usercp2.php|private.php" version="1820"><![CDATA[/*
+		<stylesheet name="usercp.css" attachedto="usercp.php|usercp2.php|private.php" version="1829"><![CDATA[/*
  * MyBB: MyMandriva Frontend Theme 
  *
  * File: usercp.css File
@@ -366,9 +368,10 @@ td .star_rating {
 }
 	
 		
+		
 		]]>
 		</stylesheet>
-		<stylesheet name="showthread.css" attachedto="showthread.php" version="1820"><![CDATA[/*
+		<stylesheet name="showthread.css" attachedto="showthread.php" version="1829"><![CDATA[/*
  * MyBB: MyMandriva Frontend Theme 
  *
  * File: showthread.css File
@@ -425,9 +428,10 @@ ul.thread_tools li.poll {
 }
 	
 		
+		
 		]]>
 		</stylesheet>
-		<stylesheet name="modcp.css" attachedto="modcp.php" version="1820"><![CDATA[/*
+		<stylesheet name="modcp.css" attachedto="modcp.php" version="1829"><![CDATA[/*
  * MyBB: MyMandriva Frontend Theme 
  *
  * File: modcp.css File
@@ -538,9 +542,10 @@ ul.thread_tools li.poll {
 }
 	
 		
+		
 		]]>
 		</stylesheet>
-		<stylesheet name="global.css" version="1820"><![CDATA[/*
+		<stylesheet name="global.css" version="1829"><![CDATA[/*
  * MyBB: MyMandriva Frontend Theme 
  *
  * File: global.css File
@@ -2401,9 +2406,10 @@ div.jqi .jqisubstate .jqibuttons button {
 }
 
 /** Impromptu End */
-	]]>
+	
+		]]>
 		</stylesheet>
-		<stylesheet name="css3.css" version="1820"><![CDATA[/*
+		<stylesheet name="css3.css" version="1829"><![CDATA[/*
  * MyBB: MyMandriva Frontend Theme 
  *
  * File: css3.css File
@@ -2509,11 +2515,12 @@ a.button {
 }
 	
 		
+		
 		]]>
 		</stylesheet>
 	</stylesheets>
 	<templates>
-		<template name="footer" version="1820"><![CDATA[<debugstuff>
+		<template name="footer" version="1829"><![CDATA[<debugstuff>
 	</div>
 </div>
 <div id="footer">
@@ -2550,7 +2557,7 @@ a.button {
 				<!-- Begin Theme Credits -->
 				
 				Theme by: <a href="http://mybbthemes.8ez.com" target="_blank">MyBB Themes PL</a>
-				&amp; <a href="http://community.mybb.com/user-6029.html" target="_blank">Vintagedaddyo</a>
+				&amp; <a href="https://github.com/vintagedaddyo/MyBB_Theme_MyMandriva" target="_blank">Vintagedaddyo</a>
 				
                 <!-- End Theme Credits -->
 				
@@ -2598,15 +2605,15 @@ a.button {
 				{$awaitingusers}
 				<navigation>
 				<br />]]></template>
-		<template name="headerinclude" version="1820"><![CDATA[<link rel="alternate" type="application/rss+xml" title="{$lang->latest_threads} (RSS 2.0)" href="{$mybb->settings['bburl']}/syndication.php" />
+		<template name="headerinclude" version="1829"><![CDATA[<link rel="alternate" type="application/rss+xml" title="{$lang->latest_threads} (RSS 2.0)" href="{$mybb->settings['bburl']}/syndication.php" />
 <link rel="alternate" type="application/atom+xml" title="{$lang->latest_threads} (Atom 1.0)" href="{$mybb->settings['bburl']}/syndication.php?type=atom1.0" />
 <meta http-equiv="Content-Type" content="text/html; charset={$charset}" />
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
 <!-- Add Favicon -->
 <link rel="Shortcut icon" href="{$theme['imgdir']}/favicon.ico" />
-<script type="text/javascript" src="{$mybb->asset_url}/jscripts/jquery.js?ver=1820"></script>
-<script type="text/javascript" src="{$mybb->asset_url}/jscripts/jquery.plugins.min.js?ver=1820"></script>
-<script type="text/javascript" src="{$mybb->asset_url}/jscripts/general.js?ver=1820"></script>
+<script type="text/javascript" src="{$mybb->asset_url}/jscripts/jquery.js?ver=1823"></script>
+<script type="text/javascript" src="{$mybb->asset_url}/jscripts/jquery.plugins.min.js?ver=1821"></script>
+<script type="text/javascript" src="{$mybb->asset_url}/jscripts/general.js?ver=1827"></script>
 
 {$stylesheets}
 
@@ -2640,7 +2647,9 @@ $(document).ready(function(){
 <script type="text/javascript">
 <!--
 	lang.unknown_error = "{$lang->unknown_error}";
-
+	lang.confirm_title = "{$lang->confirm_title}";
+	lang.expcol_collapse = "{$lang->expcol_collapse}";
+	lang.expcol_expand = "{$lang->expcol_expand}";
 	lang.select2_match = "{$lang->select2_match}";
 	lang.select2_matches = "{$lang->select2_matches}";
 	lang.select2_nomatches = "{$lang->select2_nomatches}";
