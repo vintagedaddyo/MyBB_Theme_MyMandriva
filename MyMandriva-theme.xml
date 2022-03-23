@@ -2694,7 +2694,85 @@ $(document).ready(function(){
 	var modal_zindex = 9999;
 // -->
 </script>]]></template>
+		<template name="modcp_nav_forums_posts" version="1830"><![CDATA[	<tr>
+		<td class="tcat tcat_menu tcat_collapse{$collapsedimg['modcpforums']}">
+			<div class="expcolimage"><img src="{$theme['imgdir']}/modcp/collapse{$collapsedimg['modcpforums']}.png" id="modcpforums_img" class="expander" alt="{$expaltext}" title="{$expaltext}" /></div>
+			<div><span class="smalltext"><strong>{$lang->mcp_nav_forums}</strong></span></div>
+		</td>
+	</tr>
+	<tbody style="{$collapsed['modcpforums_e']}" id="modcpforums_e">
+		{$nav_announcements}
+		{$nav_modqueue}
+		{$nav_reportcenter}
+		{$nav_modlogs}
+	</tbody>]]></template>
+		<template name="modcp_nav_users" version="1830"><![CDATA[	<tr>
+		<td class="tcat tcat_menu tcat_collapse{$collapsedimg['modcpusers']}">
+			<div class="expcolimage"><img src="{$theme['imgdir']}/modcp/collapse{$collapsedimg['modcpusers']}.png" id="modcpusers_img" class="expander" alt="{$expaltext}" title="{$expaltext}" /></div>
+			<div><span class="smalltext"><strong>{$lang->mcp_nav_users}</strong></span></div>
+		</td>
+	</tr>
+	<tbody style="{$collapsed['modcpusers_e']}" id="modcpusers_e">
+		{$nav_editprofile}
+		{$nav_banning}
+		{$nav_warninglogs}
+		{$nav_ipsearch}
+	</tbody>]]></template>
 		<template name="postbit_offline" version="1806"><![CDATA[<img src="{$theme['imgdir']}/buddy_offline.png" title="{$lang->postbit_status_offline}" alt="{$lang->postbit_status_offline}" class="buddy_status" />]]></template>
 		<template name="postbit_online" version="1806"><![CDATA[<a href="online.php" title="{$lang->postbit_status_online}"><img src="{$theme['imgdir']}/buddy_online.png" border="0" alt="{$lang->postbit_status_online}" class="buddy_status" /></a>]]></template>
+		<template name="usercp_nav_messenger" version="1830"><![CDATA[<tbody>
+<tr>
+	<td class="tcat tcat_menu tcat_collapse{$collapsedimg['usercppms']}">
+		<div class="expcolimage"><img src="{$theme['imgdir']}/usercp/collapse{$collapsedimg['usercppms']}.png" id="usercppms_img" class="expander" alt="{$expaltext}" title="{$expaltext}" /></div>
+		<div><span class="smalltext"><strong>{$lang->ucp_nav_messenger}</strong></span></div>
+	</td>
+</tr>
+</tbody>
+<tbody style="{$collapsed['usercppms_e']}" id="usercppms_e">
+	{$ucp_nav_compose}
+	<tr>
+		<td class="trow1 smalltext">
+			{$folderlinks}
+		</td>
+	</tr>
+	{$ucp_nav_tracking}
+	<tr><td class="trow1 smalltext"><a href="private.php?action=folders" class="usercp_nav_item usercp_nav_pmfolders">{$lang->ucp_nav_edit_folders}</a></td></tr>
+</tbody>]]></template>
+		<template name="usercp_nav_misc" version="1830"><![CDATA[<tbody>
+<tr>
+	<td class="tcat tcat_menu tcat_collapse{$collapsedimg['usercpmisc']}">
+		<div class="expcolimage"><img src="{$theme['imgdir']}/usercp/collapse{$collapsedimg['usercpmisc']}.png" id="usercpmisc_img" class="expander" alt="{$expaltext}" title="{$expaltext}" /></div>
+		<div><span class="smalltext"><strong>{$lang->ucp_nav_misc}</strong></span></div>
+	</td>
+</tr>
+</tbody>
+<tbody style="{$collapsed['usercpmisc_e']}" id="usercpmisc_e">
+	<tr><td class="trow1 smalltext"><a href="usercp.php?action=usergroups" class="usercp_nav_item usercp_nav_usergroups">{$lang->ucp_nav_usergroups}</a></td></tr>
+	<tr><td class="trow1 smalltext"><a href="usercp.php?action=editlists" class="usercp_nav_item usercp_nav_editlists">{$lang->ucp_nav_editlists}</a></td></tr>
+	{$attachmentop}
+	<tr><td class="trow1 smalltext"><a href="usercp.php?action=drafts" class="usercp_nav_item usercp_nav_drafts">{$draftcount}</a></td></tr>
+	<tr><td class="trow1 smalltext"><a href="usercp.php?action=subscriptions" class="usercp_nav_item usercp_nav_subscriptions">{$lang->ucp_nav_subscribed_threads}</a></td></tr>
+	<tr><td class="trow1 smalltext"><a href="usercp.php?action=forumsubscriptions" class="usercp_nav_item usercp_nav_fsubscriptions">{$lang->ucp_nav_forum_subscriptions}</a></td></tr>
+	<tr><td class="trow1 smalltext"><a href="{$profile_link}" class="usercp_nav_item usercp_nav_viewprofile">{$lang->ucp_nav_view_profile}</a></td></tr>
+</tbody>]]></template>
+		<template name="usercp_nav_profile" version="1830"><![CDATA[<tbody>
+<tr>
+	<td class="tcat tcat_menu tcat_collapse{$collapsedimg['usercpprofile']}">
+		<div class="expcolimage"><img src="{$theme['imgdir']}/usercp/collapse{$collapsedimg['usercpprofile']}.png" id="usercpprofile_img" class="expander" alt="{$expaltext}" title="{$expaltext}" /></div>
+		<div><span class="smalltext"><strong>{$lang->ucp_nav_profile}</strong></span></div>
+	</td>
+</tr>
+</tbody>
+<tbody style="{$collapsed['usercpprofile_e']}" id="usercpprofile_e">
+	<tr><td class="trow1 smalltext">
+		<div><a href="usercp.php?action=profile" class="usercp_nav_item usercp_nav_profile">{$lang->ucp_nav_edit_profile}</a></div>
+		{$changenameop}
+		<div><a href="usercp.php?action=password" class="usercp_nav_item usercp_nav_password">{$lang->ucp_nav_change_pass}</a></div>
+		<div><a href="usercp.php?action=email" class="usercp_nav_item usercp_nav_email">{$lang->ucp_nav_change_email}</a></div>
+		<div><a href="usercp.php?action=avatar" class="usercp_nav_item usercp_nav_avatar">{$lang->ucp_nav_change_avatar}</a></div>
+		{$changesigop}
+	</td></tr>
+	<tr><td class="trow1 smalltext"><a href="usercp.php?action=options" class="usercp_nav_item usercp_nav_options">{$lang->ucp_nav_edit_options}</a></td></tr>
+</tbody>]]></template>
 	</templates>
 </theme>
