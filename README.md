@@ -24,6 +24,7 @@ MyMandriva v1.2
 
 History:
 
+03/19/2022 — Updated theme for 1.8.30
 11/02/2021 — Updated theme for 1.8.29
 04/05/2019 — Updated theme for 1.8.20
 09/11/2018 — Updated theme for 1.8.19
