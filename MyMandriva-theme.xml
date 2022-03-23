@@ -572,6 +572,7 @@ ul.thread_tools li.poll {
   display: none;
   z-index: 999;
   background: #277AB9 url('themes/mymandriva/sc_arrow.png') center no-repeat;
+  border-radius: 3px;
 }
 
 #scroll_up {
@@ -726,9 +727,12 @@ a:hover, a:active {
 }
 
 #panel .upper {
-	background: #ABDAFF;
+	background: #EEEEEE;
 	color: #000;
-    border-top: 2px solid #0071C8 ;
+    border-top: 2px solid #DDDDDD;	
+	/*background: #ABDAFF;
+	color: #000;
+    border-top: 2px solid #0071C8;*/
 	padding: 7px;
 	clear: both;
 }
@@ -741,9 +745,12 @@ a:hover, a:active {
 }
 
 #panel .lower {
-	background:#ABDAFF ;
+	background: #EEEEEE;
 	color: #000;
-    border-bottom: 2px solid #0071C8;
+    border-bottom: 2px solid #DDDDDD;	
+	/*background:#ABDAFF ;
+	color: #000;
+    border-bottom: 2px solid #0071C8;*/
 	padding: 5px;
 }
 
@@ -804,10 +811,14 @@ a:hover, a:active {
 #footer .upper {
 	font-size: 12px;
 	overflow: hidden;
-	background: #abdaff;
+	background: #EEEEEE;
+	color: #000000;
+    border-top: 2px solid #DDDDDD;
+    border-bottom: 2px solid #DDDDDD;	
+	/*background: #abdaff;
 	color: #000000;
     border-top: 2px solid #0071c8;
-    border-bottom: 2px solid #0071c8;
+    border-bottom: 2px solid #0071c8;*/
 	padding: 10px;
 }
 
